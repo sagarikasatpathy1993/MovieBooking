@@ -1,0 +1,317 @@
+﻿body {
+    background-color:#f2f2f2;
+}
+
+.row {
+    
+    margin-top: 2em;
+    margin-left: 40%;
+}
+.col-md-41 {
+    border: 1px solid #607D8B;
+    height: 3em;
+    width: 30%;
+    display: inline;
+    float: left;
+    text-align: center;
+}
+.col-md-42 {
+    border: 1px solid #607D8B;
+    display: inline;
+    float: left;
+    height: 3em;
+    width: 30%;
+    text-align: center;
+}
+a {
+    color: #999999;
+    text-decoration: none;
+    font-size: large;
+    font-style: normal;
+    font-family: serif;
+}
+.__section-head {
+    margin-left: 48%;
+}
+.main {
+   
+    margin-top: 1em;
+}
+footer {
+    border: 1px solid black;
+    height: 7em;
+    border-radius: 7px;
+    background-color: #080808;
+}
+.blue-bar {
+    width: 20px;
+    height: 2px;
+    background-color: #00BCD4;
+    margin-left: 50%;
+}
+input#city {
+    border-radius: 2px;
+    background-color: beige;
+    height: 25px;
+    margin-top: 10px;
+}
+p#contact {
+    color: #999999;
+   
+    padding-left: 40%;
+    font-size: large;
+    font-style: normal;
+    font-family: serif;
+    text-align: center;
+    display: inline;
+}
+img#pic {
+    padding-top: 15px;
+    border-radius:10px;
+}
+p#copy {
+    color: #999999;
+    font-size: smaller;
+    font-style: normal;
+    font-family: serif;
+    text-align: center;
+}
+input, button, select, textarea {
+   font-family: serif;
+    font-size: small;
+    line-height: normal;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+select#City {
+    width: 164px;
+}
+.navbar .secondary {
+    zoom: 1;
+    top: 40px;
+    background: rgba(28,28,45,.65);
+    display: block;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    transition: transform .2s ease;
+    z-index: 100;
+    height: 70px;
+    padding-top: 5px;
+}
+select#CityList {
+    margin-left: 30%;
+    width: 500px;
+}
+/*Registration Page*/
+h2 {
+    text-align: center;
+}
+.successtxt {
+    text-align: center;
+}
+.succ-you-are {
+    text-align: center;
+}
+li#log {
+    margin-left: 66em;
+}
+div#form-register {
+    margin-left: 25%;
+    margin-top:5%;
+}
+div#formhorizontal {
+    margin-left: 20%;
+}
+h4
+{
+        margin-left: 40em;
+}
+input#btn {
+    margin-left: 10%;
+}
+select#UserType {
+    width: 80%;
+    height: 2.5em;
+}
+p#reg {
+    margin-left: 25%;
+}
+
+div#btnRegistration {
+    margin-left: 11em;
+}
+input#btnlogin {
+    margin-left: 25%;
+}
+input#btnReg {
+    margin-left: 11%;
+}
+div#welcomepg {
+    text-align: center;
+    font-size: large;
+    border: 1px solid black;
+    height: 7em;
+    border-radius: 4px;
+}
+div#userimg {
+    /* border: 1px solid black; */
+    width: 19%;
+    margin-top: 6%;
+    margin-left: 5%;
+}
+div#body_form {
+    /* border: 1px solid black; */
+    width: 40%;
+    margin-left: 30%;
+}
+select#Name {
+    height: 2.3em;
+    width: 80%;
+}
+select#CityNameList {
+    height: 2.3em;
+    width: 80%;
+}
+div#loginpage {
+    margin-top: 20%;
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 25em;
+}
+/*MovieBooking*/
+.banner {
+    width: 60%;
+    float: left;
+    padding-right: 0;
+}
+.slider {
+    position: relative;
+}
+.flexslider {
+    margin: 0;
+    background: #fff;
+    position: relative;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    zoom: 1;
+}
+select#CityNameList {
+    height: 2.3em;
+    width: 80%;
+    margin-left: 10%;
+    padding: 6px;
+}
+select#AreaNameList {
+    height: 2.3em;
+    width: 80%;
+    margin-left: 10%;
+}
+select#MovieNameList {
+    height: 2.3em;
+    width: 80%;
+    margin-left: 10%;
+}
+select#DateList {
+    height: 2.3em;
+    width: 80%;
+    margin-left: 10%;
+}
+select#StateNameList {
+    margin-left: 10%;
+    height: 2.3em;
+    width: 80%;
+    padding: 6px;
+}
+.main_first{
+
+    height: 32em;
+    width: 100%;
+}
+.main_second {
+    width: 50%;
+    float: left;
+    /* height: 31em; */
+    display: inline-block;
+}
+input#book {
+    margin-left: 15%;
+    margin-top: 5%;
+}
+h4#moviereg {
+    margin-left: 15em;
+}
+select#TheaterList {
+    /* border: #009688; */
+    height: 2.3em;
+    width: 80%;
+    padding: 6px;
+    margin-left: 8%;
+}
+select#TimeList {
+    height: 2.3em;
+    width: 80%;
+    padding: 6px;
+    margin-left: 8%;
+}
+select#SeatList {
+    margin-left: 8%;
+    width: 80%;
+    height: 2.3em;
+}
+select#Quantity {
+    margin-left: 8%;
+    width: 80%;
+    height: 2.3em;
+}
+div#dropdownlist {
+    border: 1px solid black;
+    height: 26em;
+    width: 50%;
+    /* border: #9C27B0; */
+}
+input#payment {
+    margin-top: 10%;
+    margin-left: 20%;
+}
+div#imagediv {
+    border: 1px solid black;
+    height: 26em;
+    width: 50%;
+    display: inline;
+    float: left;
+}
+div#dropdownlist {
+    border: 1px solid black;
+    height: 26em;
+    width: 50%;
+    
+}
+div#state {
+    border: 1px solid black;
+    height: 20em;
+    width: 50%;
+    margin-left: 20%;
+}
+div#theaterexist {
+    /* border: 1px solid black; */
+    height: 30em;
+    width: 60%;
+    margin-left: 25%;
+}
+input#Name {
+    margin-left: 10%;
+    padding: 6px;
+    margin-top: 6%;
+    height: 3em;
+}
+input#theater {
+    margin-left: 25%;
+    margin-top: 4%;
+}
+p#theaterreg {
+    margin-left: 12%;
+    margin-top: 3%;
+}

@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "LogOut";
+}
+@Styles.Render("~/Content/Booking.css")
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+             </button>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home", routeValues: null, htmlAttributes: new { id = "homeLink" })
+                    <li />
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container body-content">
+    @RenderBody()
+    <hr />
+    <footer>
+        <ul type="none">
+            <li>
+                @Html.ActionLink("Home", "Index", "Home", routeValues: null, htmlAttributes: new { id = "homeLink" })
+                @Html.ActionLink("About", "About", "Home", routeValues: null, htmlAttributes: new { id = "AboutLink" })
+                @Html.ActionLink("Contact", "Contact", "Home", routeValues: null, htmlAttributes: new { id = "ActionLink" })
+            </li>
+        </ul>
+        <p id="contact">Connect With Us On</p>
+        <img id="pic" src="@Url.Content("~/Pictures/download.png")" alt="no image">
+        <p id="copy">Copyright 2016 © Bigtree Entertainment Pvt. Ltd. All Rights Reserved.</p>
+    </footer>
+</div>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@RenderSection("scripts", required: false)

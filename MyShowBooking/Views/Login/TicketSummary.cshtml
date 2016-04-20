@@ -1,0 +1,46 @@
+﻿@model MyShowBooking.Models.MovieBooking
+@{
+    ViewBag.Title = "TicketSummary";
+}
+@Styles.Render("~/Content/Booking.css")
+@Html.Partial("_LogoutPartial")
+<div class="ticket">
+        @Html.Label("Movie Name")
+        @Html.DisplayFor(model=>model.MovieName)
+        <br />
+
+
+        @Html.Label("Theater Name")
+        @Html.DisplayFor(model => model.Name)
+        <br />
+
+        @Html.Label("Date")
+        @Html.DisplayFor(model=>model.Date)
+        <br />
+
+        @Html.Label("ShowTime")
+        @Html.DisplayFor(model=>model.ShowTime)
+
+        <br />
+
+        @Html.Label("Quantity")
+        @Html.DisplayFor(model => model.Quantity)
+        
+        <br />
+
+        @Html.Label("Total Price")
+        @Html.DisplayFor(model=>model.Price)
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+﻿@model MyShowBooking.Models.MovieImages
+@{
+    ViewBag.Title = "UploadMovieImages";
+}
+
+<h2>UploadMovieImages</h2>
+@using (Html.BeginForm("UploadMovieImages", "Login", FormMethod.Post))
+{
+  
+@Html.Label("File Upload")
+    <button onclick="btnUpload_Click" value="Upload">Upload</button>
+<img src="@Url.Content(Model.Url)" alt="No Image" height="800" width="900" />
+}
+
+

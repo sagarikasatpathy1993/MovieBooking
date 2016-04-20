@@ -1,0 +1,45 @@
+﻿@model MyShowBooking.Models.MovieRegistration
+@{
+    ViewBag.Title = "TheaterExistence";
+}
+
+@Styles.Render("~/Content/Booking.css")
+@Html.Partial("_LogoutPartial")
+@using (Html.BeginForm("TheaterExistence","Registration",FormMethod.Post))
+{
+    <div id="theaterexist">
+            <div clss="form-group">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control", @placeholder = "Enter Theater Name" } })
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+              
+            </div>
+            <div class="grid_3 grid_5">
+
+
+                @Html.DropDownListFor(model => model.StateNameList, new SelectList(Model.StateNameList, "StateID", "StateName"), "Select Your State")
+            </div>
+
+            <div>
+                @Html.DropDownListFor(model => model.CityNameList, new SelectList(Model.CityNameList, "CityID", "CityName"), "Select Your City")
+            </div>
+
+            <div>
+                @Html.DropDownListFor(model => model.AreaNameList, new SelectList(Model.AreaNameList, "AreaID", "AreaName"), "Select Your Area")
+            </div>
+            <div>
+                <input type="submit" value="Submit" id="theater" />
+            </div>
+            <div>
+                @ViewBag.Message
+            </div>
+            <div>
+                <p id="theaterreg">
+                    Not Registered?
+                    @Html.ActionLink("Register Here","TheaterRegistration", "Registration")
+                </p>
+            </div>
+    </div>
+    
+
+}
+

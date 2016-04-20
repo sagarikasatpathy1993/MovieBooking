@@ -1,0 +1,37 @@
+﻿@model MyShowBooking.Models.MovieBooking
+@{
+    ViewBag.Title = "TheaterDetails";
+}
+
+@Styles.Render("~/Content/Booking.css")
+@Html.Partial("_LogoutPartial")
+@using(Html.BeginForm("TheaterDetails","Login",FormMethod.Post))
+{ 
+<div>
+    <div id="dropdownlist">
+        <div>
+            @Html.DropDownListFor(model => model.TheaterList, new SelectList(Model.TheaterList, "TheaterID", "Name"), "Select Theater")
+        </div>
+        <div>
+            @Html.DropDownListFor(model => model.TimeList, new SelectList(Model.TimeList, "ScheduleID", "StartTime"), "Select Time")
+        </div>
+        <div>
+            @Html.DropDownListFor(model => model.SeatList, new SelectList(Model.SeatList, "SeatTypeID", "SeatName"), "Select Seats")
+        </div>
+        <div>
+            @Html.DropDownListFor(model => model.Quantity, new SelectList(new[] { 1,2,3,4,5,6}),"Quantity" )
+        </div>
+        <div>
+            <input type="submit" value="Process to Payment" id="payment" />
+           
+        </div>
+          
+    </div>
+
+
+</div>
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    
+}
